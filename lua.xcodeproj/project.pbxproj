@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		56A261EC2ABA328D00DD2D84 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261AE2ABA328C00DD2D84 /* lbaselib.c */; };
-		56A261ED2ABA328D00DD2D84 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261AF2ABA328C00DD2D84 /* lua.c */; };
-		56A261EE2ABA328D00DD2D84 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261B02ABA328C00DD2D84 /* luac.c */; };
 		56A261EF2ABA328D00DD2D84 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261B12ABA328C00DD2D84 /* lstrlib.c */; };
 		56A261F02ABA328D00DD2D84 /* lundump.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A261B22ABA328C00DD2D84 /* lundump.h */; };
 		56A261F12ABA328D00DD2D84 /* lprefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A261B32ABA328C00DD2D84 /* lprefix.h */; };
@@ -69,13 +67,57 @@
 		56A262272ABA328D00DD2D84 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261E92ABA328D00DD2D84 /* lstate.c */; };
 		56A262282ABA328D00DD2D84 /* lapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A261EA2ABA328D00DD2D84 /* lapi.h */; };
 		56A262292ABA328D00DD2D84 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A261EB2ABA328D00DD2D84 /* ldump.c */; };
+		56A262362ABA3F6000DD2D84 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A261A62ABA31C100DD2D84 /* liblua.a */; };
+		56A262462ABA3FC700DD2D84 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A261A62ABA31C100DD2D84 /* liblua.a */; };
+		56A2624B2ABA407100DD2D84 /* luaruntime in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56A2623F2ABA3FBC00DD2D84 /* luaruntime */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		56A2624C2ABA409600DD2D84 /* luac in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56A2622E2ABA3F3A00DD2D84 /* luac */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		56A262542ABA421200DD2D84 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A2624F2ABA418E00DD2D84 /* luac.c */; };
+		56A262552ABA421500DD2D84 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 56A262512ABA41BC00DD2D84 /* lua.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56A262372ABA3F6000DD2D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A2619E2ABA31C100DD2D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A261A52ABA31C100DD2D84;
+			remoteInfo = lua;
+		};
+		56A262472ABA3FC700DD2D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A2619E2ABA31C100DD2D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A261A52ABA31C100DD2D84;
+			remoteInfo = lua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56A2622C2ABA3F3A00DD2D84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /Users/charles/Development/projects/official/lua;
+			dstSubfolderSpec = 0;
+			files = (
+				56A2624C2ABA409600DD2D84 /* luac in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A2623D2ABA3FBC00DD2D84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /Users/charles/Development/projects/official/lua;
+			dstSubfolderSpec = 0;
+			files = (
+				56A2624B2ABA407100DD2D84 /* luaruntime in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		56A261A62ABA31C100DD2D84 /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A261AE2ABA328C00DD2D84 /* lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lbaselib.c; sourceTree = "<group>"; };
-		56A261AF2ABA328C00DD2D84 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua.c; sourceTree = "<group>"; };
-		56A261B02ABA328C00DD2D84 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luac.c; sourceTree = "<group>"; };
 		56A261B12ABA328C00DD2D84 /* lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstrlib.c; sourceTree = "<group>"; };
 		56A261B22ABA328C00DD2D84 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
 		56A261B32ABA328C00DD2D84 /* lprefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lprefix.h; sourceTree = "<group>"; };
@@ -135,6 +177,10 @@
 		56A261E92ABA328D00DD2D84 /* lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstate.c; sourceTree = "<group>"; };
 		56A261EA2ABA328D00DD2D84 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
 		56A261EB2ABA328D00DD2D84 /* ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldump.c; sourceTree = "<group>"; };
+		56A2622E2ABA3F3A00DD2D84 /* luac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = luac; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A2623F2ABA3FBC00DD2D84 /* luaruntime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = luaruntime; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A2624F2ABA418E00DD2D84 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = luac.c; path = src/luac.c; sourceTree = "<group>"; };
+		56A262512ABA41BC00DD2D84 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lua.c; path = src/lua.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,14 +191,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A2622B2ABA3F3A00DD2D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A262362ABA3F6000DD2D84 /* liblua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A2623C2ABA3FBC00DD2D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A262462ABA3FC700DD2D84 /* liblua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		56A2619D2ABA31C100DD2D84 = {
 			isa = PBXGroup;
 			children = (
+				56A2624E2ABA416F00DD2D84 /* lua */,
+				56A2624D2ABA416600DD2D84 /* luac */,
 				56A261AD2ABA326900DD2D84 /* src */,
 				56A261A72ABA31C100DD2D84 /* Products */,
+				56A262352ABA3F6000DD2D84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				56A261A62ABA31C100DD2D84 /* liblua.a */,
+				56A2622E2ABA3F3A00DD2D84 /* luac */,
+				56A2623F2ABA3FBC00DD2D84 /* luaruntime */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,10 +283,8 @@
 				56A261BC2ABA328C00DD2D84 /* ltablib.c */,
 				56A261D12ABA328D00DD2D84 /* ltm.c */,
 				56A261D92ABA328D00DD2D84 /* ltm.h */,
-				56A261AF2ABA328C00DD2D84 /* lua.c */,
 				56A261E52ABA328D00DD2D84 /* lua.h */,
 				56A261D42ABA328D00DD2D84 /* lua.hpp */,
-				56A261B02ABA328C00DD2D84 /* luac.c */,
 				56A261E22ABA328D00DD2D84 /* luaconf.h */,
 				56A261E62ABA328D00DD2D84 /* lualib.h */,
 				56A261E72ABA328D00DD2D84 /* lundump.c */,
@@ -231,6 +296,29 @@
 				56A261CC2ABA328D00DD2D84 /* lzio.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		56A262352ABA3F6000DD2D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56A2624D2ABA416600DD2D84 /* luac */ = {
+			isa = PBXGroup;
+			children = (
+				56A2624F2ABA418E00DD2D84 /* luac.c */,
+			);
+			name = luac;
+			sourceTree = "<group>";
+		};
+		56A2624E2ABA416F00DD2D84 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				56A262512ABA41BC00DD2D84 /* lua.c */,
+			);
+			name = lua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +379,42 @@
 			productReference = 56A261A62ABA31C100DD2D84 /* liblua.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		56A2622D2ABA3F3A00DD2D84 /* luac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A262322ABA3F3B00DD2D84 /* Build configuration list for PBXNativeTarget "luac" */;
+			buildPhases = (
+				56A2622A2ABA3F3A00DD2D84 /* Sources */,
+				56A2622B2ABA3F3A00DD2D84 /* Frameworks */,
+				56A2622C2ABA3F3A00DD2D84 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A262382ABA3F6000DD2D84 /* PBXTargetDependency */,
+			);
+			name = luac;
+			productName = luac;
+			productReference = 56A2622E2ABA3F3A00DD2D84 /* luac */;
+			productType = "com.apple.product-type.tool";
+		};
+		56A2623E2ABA3FBC00DD2D84 /* luaruntime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A262432ABA3FBC00DD2D84 /* Build configuration list for PBXNativeTarget "luaruntime" */;
+			buildPhases = (
+				56A2623B2ABA3FBC00DD2D84 /* Sources */,
+				56A2623C2ABA3FBC00DD2D84 /* Frameworks */,
+				56A2623D2ABA3FBC00DD2D84 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A262482ABA3FC700DD2D84 /* PBXTargetDependency */,
+			);
+			name = luaruntime;
+			productName = luaruntime;
+			productReference = 56A2623F2ABA3FBC00DD2D84 /* luaruntime */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +425,12 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					56A261A52ABA31C100DD2D84 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					56A2622D2ABA3F3A00DD2D84 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					56A2623E2ABA3FBC00DD2D84 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -319,6 +449,8 @@
 			projectRoot = "";
 			targets = (
 				56A261A52ABA31C100DD2D84 /* lua */,
+				56A2622D2ABA3F3A00DD2D84 /* luac */,
+				56A2623E2ABA3FBC00DD2D84 /* luaruntime */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +464,6 @@
 				56A262112ABA328D00DD2D84 /* lobject.c in Sources */,
 				56A262052ABA328D00DD2D84 /* loadlib.c in Sources */,
 				56A261F62ABA328D00DD2D84 /* linit.c in Sources */,
-				56A261ED2ABA328D00DD2D84 /* lua.c in Sources */,
 				56A2621D2ABA328D00DD2D84 /* lvm.c in Sources */,
 				56A262292ABA328D00DD2D84 /* ldump.c in Sources */,
 				56A262162ABA328D00DD2D84 /* lparser.c in Sources */,
@@ -350,7 +481,6 @@
 				56A2620D2ABA328D00DD2D84 /* lmem.c in Sources */,
 				56A2620B2ABA328D00DD2D84 /* lstring.c in Sources */,
 				56A261F52ABA328D00DD2D84 /* loslib.c in Sources */,
-				56A261EE2ABA328D00DD2D84 /* luac.c in Sources */,
 				56A261F42ABA328D00DD2D84 /* lzio.c in Sources */,
 				56A262042ABA328D00DD2D84 /* lgc.c in Sources */,
 				56A262132ABA328D00DD2D84 /* lfunc.c in Sources */,
@@ -365,7 +495,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56A2622A2ABA3F3A00DD2D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A262542ABA421200DD2D84 /* luac.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A2623B2ABA3FBC00DD2D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A262552ABA421500DD2D84 /* lua.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56A262382ABA3F6000DD2D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A261A52ABA31C100DD2D84 /* lua */;
+			targetProxy = 56A262372ABA3F6000DD2D84 /* PBXContainerItemProxy */;
+		};
+		56A262482ABA3FC700DD2D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A261A52ABA31C100DD2D84 /* lua */;
+			targetProxy = 56A262472ABA3FC700DD2D84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		56A261A82ABA31C100DD2D84 /* Debug */ = {
@@ -513,6 +672,46 @@
 			};
 			name = Release;
 		};
+		56A262332ABA3F3B00DD2D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CF264WE69M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56A262342ABA3F3B00DD2D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CF264WE69M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56A262442ABA3FBC00DD2D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CF264WE69M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56A262452ABA3FBC00DD2D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CF264WE69M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +729,24 @@
 			buildConfigurations = (
 				56A261AB2ABA31C100DD2D84 /* Debug */,
 				56A261AC2ABA31C100DD2D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A262322ABA3F3B00DD2D84 /* Build configuration list for PBXNativeTarget "luac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A262332ABA3F3B00DD2D84 /* Debug */,
+				56A262342ABA3F3B00DD2D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A262432ABA3FBC00DD2D84 /* Build configuration list for PBXNativeTarget "luaruntime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A262442ABA3FBC00DD2D84 /* Debug */,
+				56A262452ABA3FBC00DD2D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
